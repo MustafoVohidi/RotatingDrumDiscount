@@ -1,0 +1,219 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+#modal_sale{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+.discount_product_percent{
+    height: 380px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    justify-content: space-between;
+    position: relative;
+}
+.lh_info{
+    height: 100%;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    left: -30px;
+    position: relative;
+    width: 340px;
+}
+.lh_title{
+    color: #454545;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 25px;
+}
+.lh_text{
+    color: #454545;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 18px;
+}
+.lh_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 25px;
+}
+.lh_form .lh_text{
+    color: #fc6519;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.lh_input{
+    background: #fafafa;
+    border-radius: 3px;
+    display: block;
+    border: 1px solid #cfd0d1;
+    font-weight: 400;
+    font-size: 13px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    height: 40px;
+    width: 300px;
+} 
+.lh_agreement{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: start;
+}
+#agreement-val{
+    width: 30px;
+    height: 16px;
+    z-index: 1;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #fff;
+    margin-right: 14px;
+}
+.d_none{
+    display: none;
+}
+.lh_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.lh_close button{
+    background: none;
+    border: none;
+}
+.lh_button{
+    background: #fff;
+    color: #fc6519;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #fc6519;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+.xx{
+    color: #ffdcbb;
+    color: #c5e0ff;
+}
+#lh_anvas{
+    border: 5px solid #fc6519;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    border-radius: 50%;
+    background-image: url(./baraban1.png);
+    background-size: 102% 102%;
+    background-position: 50% 50%;
+    transform: rotate(0deg);
+}
+.lh_wheel{
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    left: -110px;
+    background: transparent;
+    transform: rotate(0deg);
+}
+#agreement-text{
+    font-size: 12px;
+    line-height: 1;
+}
+#agreement-text a{
+    color: #fc6519;
+}
+.lh_success{
+    left: auto;
+    position: absolute;
+    right: 30px;
+    background: #fafafa;
+    height: 100%;
+    z-index: 1;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.lh_success_text{
+    font-size: 18px;
+    color: #c5e0ff;
+    font-weight: 400;
+}
+.lh_success_percent{
+    color: #fc6519;
+    border: 2px dashed #fc6519;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 6px rgb(252 101 25 / 42%);
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    margin: 25px 0;
+}
+.lh_fortune_arrow::before{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background: #fc6519;
+    transform: translateY(-50%) rotate(45deg);
+    /* display: flex;
+    align-items: start;
+    justify-content: end;
+    font-size: 2rem; */
+}
+.lh_fortune_arrow{
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
